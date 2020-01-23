@@ -1,0 +1,25 @@
+
+(function(ns){
+
+var Asset = ns.Asset = Hilo.Class.create({
+    Mixes: Hilo.EventMixin,
+
+    queue: null,
+    bg: null,
+    ground: null,
+    ready: null,
+    over: null,
+    numberGlyphs: null,
+    birdAtlas: null,
+    holdback: null,
+    bgs:null,
+
+    load: function(){
+        var resources = [
+            {id:'bg', src:'images/test.png'},
+            {id:'ground', src:'images/ground.png'},
+            {id:'ready', src:'images/ready.png'},
+            {id:'over', src:'images/over.png'},
+            {id:'number', src:'images/number.png'},
+            {id:'bird', src:'images/bird.png'},
+            {id:'holdback', src:'images/holdback.png'},

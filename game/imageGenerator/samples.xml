@@ -1,0 +1,5 @@
+<samples>
+	<simpletiled name="flower" width="20" height="30" />
+	<!-- <simpletiled name="summer" width="20" height="30" textOutput="True"/> -->
+
+</samples>

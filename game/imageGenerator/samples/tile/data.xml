@@ -1,0 +1,19 @@
+<set size="32" unique="False">
+	<tiles>
+		<tile name="X" symmetry="T"/>
+		<tile name="I" symmetry="L"/>
+		<tile name="L" symmetry="L"/>
+		<tile name="slash" symmetry="X"/>
+		<tile name="T" symmetry="L" weight="0.0001"/>
+		<tile name="default" symmetry="T" weight="0.1"/>
+	</tiles>
+	<neighbors>
+		<neighbor left="I" right="I"/>
+		<neighbor left="I" right="X"/>
+		<neighbor left="I" right="L"/>
+		<neighbor left="X" right="L"/>
+		<neighbor left="T" right="L"/>
+		<neighbor left="slash" right="L"/>
+		<neighbor left="default" right="L"/>
+	</neighbors>
+</set>
