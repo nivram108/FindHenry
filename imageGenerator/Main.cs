@@ -6,6 +6,7 @@ The above copyright notice and this permission notice shall be included in all c
 The software is provided "as is", without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringement. In no event shall the authors or copyright holders be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the software or the use or other dealings in the software.
 */
 
+using System.Drawing.Imaging;
 using System;
 using System.IO;
 using System.Xml.Linq;
@@ -52,9 +53,19 @@ public static class Program
                     {
                         Console.WriteLine("DONE");
 
-                        //model.Graphics().Save($"{counter} {name} {i}.png");
-                        model.Graphics().Save("image/" + i + ".png");
-                        if (model is SimpleTiledModel && xelem.Get("textOutput", false))
+						//model.Graphics().Save($"{counter} {name} {i}.png");
+						//model.Graphics().Save("image/" + i + ".png");
+						string outputFileName = "image/" + i + ".png";
+						using (MemoryStream memory = new MemoryStream())
+						{
+							using (FileStream fs = new FileStream(outputFileName, FileMode.Create, FileAccess.ReadWrite))
+							{
+								model.Graphics().Save(memory, ImageFormat.Png);
+								byte[] bytes = memory.ToArray();
+								fs.Write(bytes, 0, bytes.Length);
+							}
+						}
+						if (model is SimpleTiledModel && xelem.Get("textOutput", false))
                             System.IO.File.WriteAllText($"{counter} {name} {i}.txt", (model as SimpleTiledModel).TextOutput());
 
                         break;

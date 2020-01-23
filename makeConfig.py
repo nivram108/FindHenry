@@ -13,7 +13,7 @@ checkList = []
 # print(checkList)
 
 # ans = open("../../../imageGenerator/bin/Debug/netcoreapp3.1/ans.txt", "r")
-ans = open("imageGenerator/bin/Debug/netcoreapp3.1/answer.txt", "r")
+ans = open("imageGenerator/answer.txt", "r")
 lines = ans.readlines()
 image_cnt = int(lines[0])
 # image_cnt = 25
@@ -26,7 +26,7 @@ for line in lines:
     asset_script.writelines(line)
 
 for x in range(0, image_cnt):
-    asset_script.writelines("{id:'" + str(x) + "'	, src:'imageGenerator/bin/Debug/netcoreapp3.1/image/" + str(x) + ".png'}," + "\n")
+    asset_script.writelines("{id:'" + str(x) + "'	, src:'imageGenerator/image/" + str(x) + ".png'}," + "\n")
     # asset_script.writelines("{id:'" + str(x) + "'	, src:'images/maps/" + str(x) + ".png'}," + "\n")
 
 lines = asset_after.readlines()
@@ -37,7 +37,7 @@ for line in lines:
 game_prev = open("src/gameScriptPrev.txt", "r")
 game_script = open("src/game.js", "w")
 game_after = open("src/gameScriptAfter.txt", "r")
-ans = open("imageGenerator/bin/Debug/netcoreapp3.1/answer.txt", "r")
+ans = open("imageGenerator/answer.txt", "r")
 
 lines = game_prev.readlines()
 for line in lines:

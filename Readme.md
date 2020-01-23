@@ -6,7 +6,7 @@
 
 FindHenry is a game that you have to find your friend, Henry
 ![](https://i.imgur.com/HnoXRiZ.png)
-in the fantansy world. 
+in the fantansy world.
 
 ---
 
@@ -17,9 +17,9 @@ Before building the application, you need:
  - python 3.7
 ----
 ### Build
-To build the application, you need to execute:
- 1.  ```{project_folder}/game/imageGenerator/WaveFunctionCollapse.csproj```
- 2.  ```{project_folder}/game/makeConfig.py```
+To build the application, you need to execute through command line both files:
+ 1.  ```{project_folder}/imageGenerator > dotnet run ```
+ 3.  ```{project_folder} > python makeConfig.py```
 
 ----
 ### Gameplay
@@ -40,7 +40,7 @@ The world is generated randomly using WaveFunctionCollapse function.
  - **Change the content of each stage**
      Rebuild the application will regenerate the content of each stage randomly
  - **Change the maximum stage**
-     Change the parameter ```stageCount``` in ```{project_folder}/game/imageGenerator/Main.cs```
+     Change the parameter ```stageCount``` in ```{project_folder}/imageGenerator/Main.cs```
      ```c sharp
      ...
      static void Main()
@@ -50,7 +50,6 @@ The world is generated randomly using WaveFunctionCollapse function.
      ```
      which is set to 25 currently
  - **Change image pack**
-    put your image pack in ```{project_folder}/game/imageGenerator/samples```
-    and add your image pack name to  ```{project_folder}/game/imageGenerator/samples.xml``` with parameters.
+    put your image pack in ```{project_folder}/imageGenerator/samples```
+    and add your image pack name to  ```{project_folder}/imageGenerator/samples.xml``` with parameters.
     Remind that you have to set your own image pack rule as ```data.xml``` in your image pack folder
-
