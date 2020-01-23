@@ -25,9 +25,11 @@ To build the application, you need to execute through command line both files:
 ----
 ### Gameplay
 Run ```{project_folder}/index.html```To launch the game.
+
 ![](https://i.imgur.com/lPSLoth.png)
 
 After clicking anywhere on the game window, the game will start and count your score beneath.
+
 ![](https://i.imgur.com/7UR5BlT.png)
 
 
