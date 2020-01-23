@@ -1,8 +1,9 @@
 # FindHenry
 ---
+![](https://i.imgur.com/YxyhIyQ.png)
 
 ## Introduction
-![](https://i.imgur.com/E8QB4d2.png)
+
 
 FindHenry is a game that you have to find your friend, Henry
 ![](https://i.imgur.com/HnoXRiZ.png)

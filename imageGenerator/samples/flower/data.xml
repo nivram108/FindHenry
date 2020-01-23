@@ -23,6 +23,7 @@
 
 		<tile name="cliff" symmetry="T" weight="0.1"/>
 		<tile name="cliffcorner" symmetry="L" weight="0.08"/>
+		<tile name="cliffturn" symmetry="L" weight="0.08"/>
 
 		<tile name="stair" symmetry="T" weight="0.05"/>
 
@@ -85,8 +86,11 @@
 		<neighbor left="road 1" right="cliff 1"/>
 		<neighbor left="cliff 1" right="roadturn 0"/>
 		<neighbor left="roadturn 1" right="cliff 1"/>
-		<neighbor left="cliffcorner 0" right="cliffcorner 2"/>
+
+		<neighbor left="cliffcorner 0" right="cliffturn 2"/>
 		<neighbor left="cliffcorner 1" right="road 3"/>
+		<neighbor left="cliffcorner 3" right="cliffturn 1"/>
+
 
 		<neighbor left="cliffcorner 1" right="roadturn 0"/>
 		<neighbor left="cliffcorner 1" right="roadturn 3"/>
@@ -182,7 +186,12 @@
 		<neighbor left="char_bryan 0"   right="cliff 1"/>
 		<neighbor left="char_wilson 0"  right="cliff 1"/>
 
-
+		<neighbor left="cliff 2" right="cliffturn 2"/>
+		<neighbor left="cliffturn 3" right="cliffcorner 1"/>
+		<neighbor left="cliffturn 1" right="grass 0"/>
+		<neighbor left="cliffturn 1" right="road 3"/>
+		<neighbor left="cliffturn 1" right="roadturn 0"/>
+		
 
 
 	</neighbors>
