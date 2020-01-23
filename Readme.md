@@ -7,7 +7,7 @@
 
 FindHenry is a game that you have to find your friend, Henry
 ![](https://i.imgur.com/HnoXRiZ.png)
-in the fantansy world.
+in the fantansy world. 
 
 ---
 
@@ -28,7 +28,8 @@ Run ```{project_folder}/index.html```To launch the game.
 ![](https://i.imgur.com/lPSLoth.png)
 
 After clicking anywhere on the game window, the game will start and count your score beneath.
-![](https://i.imgur.com/L17DzA0.png)
+![](https://i.imgur.com/7UR5BlT.png)
+
 
 Find Henry![](https://i.imgur.com/HnoXRiZ.png) and click him to earn score and move to next stage, clicking elsewhere will lose a score.
 
@@ -54,3 +55,4 @@ The world is generated randomly using WaveFunctionCollapse function.
     put your image pack in ```{project_folder}/imageGenerator/samples```
     and add your image pack name to  ```{project_folder}/imageGenerator/samples.xml``` with parameters.
     Remind that you have to set your own image pack rule as ```data.xml``` in your image pack folder
+
