@@ -57,4 +57,7 @@ The world is generated randomly using WaveFunctionCollapse function.
     put your image pack in ```{project_folder}/imageGenerator/samples```
     and add your image pack name to  ```{project_folder}/imageGenerator/samples.xml``` with parameters.
     Remind that you have to set your own image pack rule as ```data.xml``` in your image pack folder
+----
+## Project SlideS
+Click the [link](https://drive.google.com/file/d/11vu78WkIaIEv6d6S-GhPiYY3ppl4LR2k/view?usp=sharing) to see our project presentation slides!
 
